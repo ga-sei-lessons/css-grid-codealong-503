@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid Layoot</title>
+    <style>
+      body {
+        display: grid;
+        min-height: 100vh;
+        margin: 0;
+        grid-template-columns: 180px auto;
+        grid-template-rows: 200px 1fr 120px;
+
+        grid-template-areas:  "header header"
+                              "sidebar main"
+                              "footer footer";
+      }
+
+      header {
+        grid-area: header;
+        background-color: salmon;
+      }
+
+      aside {
+        grid-area: sidebar;
+        background-color: lightgray;
+      }
+
+      main {
+        grid-area: main;
+      }
+
+      footer {
+        grid-area: footer;
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <header>header</header>
+    <aside>aside</aside>
+    <main>Main</main>
+    <footer>footer</footer>
+  </body>
+</html>
